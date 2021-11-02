@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 400px
+}
+
+.container {
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 15rem;
+}
+
+input{
+    margin: 2rem 0rem;
+    padding: 5px;
+    border-radius: 5px;
+    width: 650px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F7F7;
+    border-radius: 50px;
+    width: 700px;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+.item {
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    border-bottom: 1px #DADEE1 solid;
+    margin-bottom: 0.5rem;
+    width: 600px;
+    justify-content: space-between;
+}
+
+button {
+    padding: 5px;
+}
+
+i {
+    padding-left: 1rem;
+}
