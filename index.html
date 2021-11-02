@@ -15,26 +15,56 @@
 
         <div class="container">
 
-            <img src="https://www.boolean.careers/images/misc/logo.png" alt="Boolean Logo">
+            <img src="https://www.boolean.careers/images/misc/logo.png"
+                alt="Boolean Logo">
 
             <div id="app">
                 <div class="addTasks">
-                    <input type="text" v-model="newTask" @keyup.enter="addTask" placeholder="Inserisci Task">
+                    <input type="text" v-model="newTask" @keyup.enter="addTask"
+                        placeholder="Inserisci Task">
                     <button @click="addTask">Add</button>
                 </div>
-                <div class="tasks" v-if="tasks.length> 0">
-                    <div class="item" v-for="(task, index) in tasks">
-                        <p>{{task}}</p>
-                        <div class="option">
-                            <i class="fas fa-check" @click="completeTask(index)"></i>
-                            <i class="fas fa-times" @click="removeTask(index)"></i>
+
+                <div class="table">
+                    <div class="tasks" v-if="tasks.length> 0">
+                        <h1>ToDo List</h1>
+                        <div class="item" v-for="(task, index) in tasks">
+                            <p>{{task}}</p>
+                            <div class="option">
+                                <i class="fas fa-check"
+                                    @click="completeTask(index)"></i>
+                                <i class="fas fa-times"
+                                    @click="removeTask(index)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-else>
+                        <h1>ALL DONE</h1>
+                    </div>
+
+                    <div class="redo">
+                        <h1>Completed</h1>
+                        <div class="item" v-for="(task, index) in compTasks">
+                            <p>{{task}}</p>
+                            <div class="option">
+                                <i class="fas fa-undo"
+                                    @click="redoTask(index)"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trash">
+                        <h1>Trash</h1>
+                        <div class="item" v-for="(task, index) in delTasks">
+                            <p>{{task}}</p>
+                            <div class="option">
+                                <i class="fas fa-trash-restore"
+                                    @click="restoreTask(index)"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div v-else>
-                    <h1>ALL DONE</h1>
-                </div>
-                
+
             </div>
         </div>
 

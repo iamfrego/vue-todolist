@@ -8,37 +8,38 @@ img {
     width: 400px
 }
 
+.table {
+    display: flex;
+    justify-content: space-around;
+}
+
 .container {
     text-align: center;
-    width: 1000px;
-    margin: auto;
     margin-top: 15rem;
 }
 
-input{
+input {
     margin: 2rem 0rem;
     padding: 5px;
     border-radius: 5px;
     width: 650px;
 }
 
-.tasks {
+.tasks, .redo, .trash {
     display: flex;
     flex-direction: column;
     background-color: #F5F7F7;
     border-radius: 50px;
-    width: 700px;
-    margin: auto;
     padding: 2rem 0rem;
+    width: 400px;
 }
 
 .item {
     display: flex;
-    margin: auto;
     padding: 1rem;
     border-bottom: 1px #DADEE1 solid;
     margin-bottom: 0.5rem;
-    width: 600px;
+    width: 400px;
     justify-content: space-between;
 }
 
