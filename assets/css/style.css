@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: gainsboro;
+}
+
 img {
     width: 400px
 }
@@ -20,9 +24,10 @@ img {
 
 input {
     margin: 2rem 0rem;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     width: 650px;
+    border: transparent;
 }
 
 .tasks, .redo, .trash {
@@ -44,7 +49,8 @@ input {
 }
 
 button {
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 i {
@@ -55,4 +61,5 @@ i {
 span {
     text-decoration: underline;
     cursor: pointer;
+    color: red;
 }
