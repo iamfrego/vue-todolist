@@ -45,6 +45,13 @@ const app = new Vue({
         restoreTask(i) {
             this.tasks.push(this.delTasks[i]);
             this.delTasks.splice(i, 1);
+        },
+
+        cleanTrash() {
+            const choose = prompt("Please confirm: Y/N")
+            if (choose === "Y" || choose === "y") {
+                this.delTasks = []
+            }
         }
 
     }

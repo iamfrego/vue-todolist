@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="trash">
-                        <h1>Trash</h1>
+                        <h1>Trash (<span @click="cleanTrash()">Empty Bin</span>) </h1>
                         <div class="item" v-for="(task, index) in delTasks">
                             <p>{{task}}</p>
                             <div class="option">

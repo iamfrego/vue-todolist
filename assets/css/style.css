@@ -49,4 +49,10 @@ button {
 
 i {
     padding-left: 1rem;
+    cursor: pointer;
+}
+
+span {
+    text-decoration: underline;
+    cursor: pointer;
 }
