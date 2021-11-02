@@ -25,9 +25,9 @@
                 <div class="tasks" v-if="tasks.length> 0">
                     <div class="item" v-for="(task, index) in tasks">
                         <p>{{task}}</p>
-                        <div class="remover">
-                            <i class="fas fa-times"
-                                @click="removeTask(index)"></i>
+                        <div class="option">
+                            <i class="fas fa-check" @click="completeTask(index)"></i>
+                            <i class="fas fa-times" @click="removeTask(index)"></i>
                         </div>
                     </div>
                 </div>
